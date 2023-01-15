@@ -256,22 +256,47 @@ h1 {
 
 }
 
+.extra {
+    margin-top: 70px;
+    text-align: center;
+    color: #FF900E;
+    padding-bottom: 30px;
+}
+
 .extra-section {
+    display: flex;
     display: grid;
     grid-template-columns: repeat(3, .01fr);
     justify-content: center;
-    gap: 10px;
+    gap: 10%;
+
+
+
+}
+
+.project-pic:hover {
+    transition: width 2s, height 2s, transform 2s;
+    transform: rotate(0.5turn);
 
 }
 
 .footer {
-    background-color: aqua;
+    background-color: #FFF4E7;
     text-align: center;
-
+    border:2px solid white;
+    border-width: 50px;
+    border-left-width: 50px;
+    margin-top: 150px;
+    color: black;
+   
+    
+    
+   
+    
 }
 
 .text {
-    color: #FFFFFF;
+    color: black;
     padding-top: 40px;
 }
 
