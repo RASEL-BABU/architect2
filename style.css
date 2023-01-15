@@ -5,9 +5,10 @@
 }
 
 /* style start with navbar */
-.primary-color{
-    color:#FF900E;
+.primary-color {
+    color: #FF900E;
 }
+
 .navbar {
     display: flex;
     /* margin: 50px; */
@@ -21,9 +22,11 @@
     list-style: none;
     gap: 60px;
 }
-.web-title{
+
+.web-title {
     margin-left: 150px;
 }
+
 /* button style */
 
 .btn1 {
@@ -39,6 +42,7 @@
     font-size: 15px;
 
 }
+
 .btn2 {
     width: 250px;
     height: 130px;
@@ -47,7 +51,7 @@
     padding: 21px, 24px, 20px, 25px;
     background: #FF900E;
     border-radius: 8px;
-    border:none;
+    border: none;
 
     font-weight: bold;
     font-size: 15px;
@@ -55,13 +59,15 @@
     /* padding-bottom: 30px; */
 
 }
+
 .btn3 {
-  
-   
+
+
     position: relative;
     margin-top: -70px;
-     text-align: center;
+    text-align: center;
 }
+
 /* header styles */
 .header-details {
     text-align: center;
@@ -102,13 +108,15 @@
     font-weight: 500;
     font-size: 45px;
 }
-.art-text{
-    font-size:20px;
+
+.art-text {
+    font-size: 20px;
 }
-.others{
+
+.others {
     padding-bottom: 20px;
     padding-left: 50px;
-    
+
 }
 
 .features-image {
@@ -120,6 +128,7 @@
     width: 342px;
     height: 342px;
 }
+
 /* verticle line draw */
 
 
@@ -128,9 +137,11 @@
     padding-left: 20px;
     /* padding-top: 20px; */
 }
-.vl-des{
+
+.vl-des {
     padding-top: 20px;
 }
+
 .article {
     display: flex;
     margin-top: 130px;
@@ -163,55 +174,73 @@
     padding-top: 20px;
 }
 
-h1{
+h1 {
     font-weight: bold;
     font-size: 40px;
 }
+
 /* Achievment section */
 
 .heading-achievment {
     font-weight: bold;
     font-size: 45px;
     padding-left: 50px;
-    
+
     margin-top: 50px;
 }
+
 .des {
     padding-top: 20px;
     margin-left: 50px;
     font-size: 16;
+    font-weight: 400;
 }
 
 .achievment {
 
-    display: flex;
-    gap: 120px;
-    justify-content: center;
-    text-align: center;
-    justify-content: center;
-   padding-top:50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 100px;
+    padding-top: 50px;
+    padding-left: 40px;
+    margin-right: 20px;
 }
 
 .achievment-details {
-    border: 1px solid black;
-    border-color: #FF900E;
-    width: 241.83px;
-    height: 230px;
-   
+    position: relative;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    border: 1px solid #FF900E;
+}
+
+.name-awards {
+    font-size: 20px;
+    font-weight: 600;
+
+}
+
+.number {
+    font-weight: 600;
+    font-size: 45px;
 }
 
 .achievment-details:hover {
-    background-color:wheat;
+    background-color: wheat;
     transition: width 2s, height 2s, transform 2s;
-    transform: rotate(50deg);
+    transform: rotate(30deg);
     /* padding-top: 30px; */
 }
 
-
-
 .sponsor {
     text-align: center;
-    padding-top: 50px;
+    padding-top: 80px;
+}
+
+.sponsor-heading {
+    font-weight: 700;
+    font-size: 45px;
+
 }
 
 .sponsor-image {
@@ -226,56 +255,64 @@ h1{
     padding-top: 50px;
 
 }
-.extra-section{
+
+.extra-section {
     display: grid;
-    grid-template-columns: repeat(3,.01fr);
+    grid-template-columns: repeat(3, .01fr);
     justify-content: center;
-    gap:10px;
-    
+    gap: 10px;
+
 }
 
 .footer {
     background-color: aqua;
     text-align: center;
-    
+
 }
-    .text{
-        color:#FFFFFF;
-        padding-top: 40px;
-    }
+
+.text {
+    color: #FFFFFF;
+    padding-top: 40px;
+}
 
 
 
-@media screen and (max-width:576px){
-    .listitem{
+@media screen and (max-width:576px) {
+    .listitem {
         flex-direction: column;
-        margin:50px;
+        margin: 50px;
     }
-        
-    
-    .header-titles{
+
+
+    .header-titles {
         font-size: 20px;
     }
-    .banner{
+
+    .banner {
         align-items: flex-start;
         padding-left: 0px;
     }
+
     .features-image {
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
-    .banner ,img{
-       height: 300px;
-       width: 300px;
-       align-items: center;
-       padding-left: 80px;
+
+    .banner,
+    img {
+        height: 300px;
+        width: 300px;
+        align-items: center;
+        padding-left: 80px;
     }
-    .web-title{
+
+    .web-title {
         /* margin-left: 20px; */
     }
+
     .sponsor-image {
 
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-    
-}
+
+    }
 }
