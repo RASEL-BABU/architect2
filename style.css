@@ -5,6 +5,9 @@
 }
 
 /* style start with navbar */
+.primary-color{
+    color:#FF900E;
+}
 .navbar {
     display: flex;
     /* margin: 50px; */
@@ -18,6 +21,10 @@
     list-style: none;
     gap: 60px;
 }
+.web-title{
+    margin-left: 150px;
+}
+/* button style */
 
 .btn1 {
     width: 180px;
@@ -30,7 +37,28 @@
     margin-top: 30px;
 
 }
+.btn2 {
+    width: 250px;
+    height: 130px;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 21px, 24px, 20px, 25px;
+    background: #FF900E;
+    border-radius: 8px;
+    border:none;
+    font-size: 20px;
+    /* margin-top: 30px; */
+    /* padding-bottom: 30px; */
 
+}
+.btn3 {
+  
+   
+    position: relative;
+    margin-top: -70px;
+     text-align: center;
+}
+/* header styles */
 .header-details {
     text-align: center;
     margin-top: 150px;
@@ -47,7 +75,7 @@
     padding-top: 50px;
 }
 
-/* header styles */
+
 .header {
     background: rgba(255, 144, 14, 0.1);
 }
@@ -67,6 +95,16 @@
 
 .feature-article {
     padding-top: 200px;
+    font-weight: 500;
+    font-size: 45px;
+}
+.art-text{
+    font-size:20px;
+}
+.others{
+    padding-bottom: 20px;
+    padding-left: 50px;
+    
 }
 
 .features-image {
@@ -78,11 +116,17 @@
     width: 342px;
     height: 342px;
 }
+/* verticle line draw */
+
 
 .vl {
-    border-left: 5px solid green;
+    border-left: 7px solid #FF900E;
+    padding-left: 20px;
+    /* padding-top: 20px; */
 }
-
+.vl-des{
+    padding-top: 20px;
+}
 .article {
     display: flex;
     margin-top: 130px;
@@ -105,9 +149,7 @@
 
 }
 
-.vl {
-    border-left: 7px solid yellow;
-}
+
 
 .blogs {
     padding-top: 70px;
@@ -117,26 +159,23 @@
     padding-top: 20px;
 }
 
-.btn2 {
-    width: 180px;
-    height: 64px;
-    color: #FFFFFF;
-    text-align: center;
-    padding: 21px, 24px, 20px, 25px;
-    background: #FF900E;
-    border-radius: 8px;
-    margin-top: 30px;
-
+h1{
+    font-weight: bold;
+    font-size: 40px;
 }
-
-.btn23 {
-    text-align: center;
-
-}
+/* Achievment section */
 
 .heading-achievment {
+    font-weight: bold;
     font-size: 45px;
     padding-left: 50px;
+    
+    margin-top: 50px;
+}
+.des {
+    padding-top: 20px;
+    margin-left: 50px;
+    font-size: 16;
 }
 
 .achievment {
@@ -145,28 +184,26 @@
     gap: 120px;
     justify-content: center;
     text-align: center;
-    padding-top: 50px;
+    justify-content: center;
+   padding-top:50px;
 }
 
 .achievment-details {
     border: 1px solid black;
     border-color: #FF900E;
     width: 241.83px;
-    height: 241.83px;
-
-
-
+    height: 230px;
+   
 }
 
 .achievment-details:hover {
     background-color:wheat;
+    transition: width 2s, height 2s, transform 2s;
+    transform: rotate(50deg);
     /* padding-top: 30px; */
 }
 
-.des {
-    padding-top: 20px;
-    margin-left: 50px;
-}
+
 
 .sponsor {
     text-align: center;
@@ -185,6 +222,13 @@
     padding-top: 50px;
 
 }
+.extra-section{
+    display: grid;
+    grid-template-columns: repeat(3,.01fr);
+    justify-content: center;
+    gap:10px;
+    
+}
 
 .footer {
     background-color: aqua;
@@ -202,8 +246,9 @@
     .listitem{
         flex-direction: column;
         margin:50px;
-        
     }
+        
+    
     .header-titles{
         font-size: 20px;
     }
@@ -214,5 +259,19 @@
     .features-image {
         grid-template-columns: repeat(1,1fr);
     }
+    .banner ,img{
+       height: 300px;
+       width: 300px;
+       align-items: center;
+       padding-left: 80px;
+    }
+    .web-title{
+        /* margin-left: 20px; */
+    }
+    .sponsor-image {
+
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
     
+}
 }
